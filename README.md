@@ -39,26 +39,25 @@ For a mid-market UK e-commerce retailer operating across ~40 countries, the core
 ## Dataset
 | Attribute | Details |
 |---|---|
-| **Source Name** | Retail Sales Dataset (Kaggle) |
-| **Direct Access Link** | [Kaggle Dataset](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset) |
-| **Row Count** | 1,000 |
-| **Column Count** | 9 |
-| **Time Period Covered** | Dec 2009 – Dec 2011 |
-| **Format** | CSV |
+| **Source Name** | Online Retail II (UCI Machine Learning Repository) |
+| **Direct Access Link** | [UCI Dataset](https://archive.ics.uci.edu/dataset/502/online+retail+ii) |
+| **Row Count** | ~1,067,000 |
+| **Column Count** | 8 raw columns (16 engineered) |
+| **Time Period Covered** | 01-Dec-2009 to 09-Dec-2011 |
+| **Format** | Excel (.xlsx) converted to CSV |
 
 **Key Columns Used**
 
 | Column Name | Description | Role in Analysis |
 |---|---|---|
-| Transaction ID | Unique identifier for each transaction | Unique ID |
-| Date | Date the transaction occurred | Time series analysis |
+| Invoice | Invoice number (C prefix for returns) | Order tracking & returns |
+| StockCode | 5-digit product code | Product analysis |
+| Description | Free-text product name | Category parsing |
+| Quantity | Units sold (negative for returns) | Volume metrics |
+| InvoiceDate | Timestamp of invoice | Time series analysis |
+| Price | Unit price in GBP (£) | Value metrics |
 | Customer ID | Unique identifier for each customer | Customer segmentation |
-| Gender | Customer gender | Demographic split |
-| Age | Customer age | Demographic split |
-| Product Category | Category of the purchased product | Product analysis |
-| Quantity | Number of items purchased | Volume metrics |
-| Price per Unit | Unit price of the product | Value metrics |
-| Total Amount | Total transaction value (Quantity × Price per Unit) | Revenue calculation |
+| Country | Country of customer | Geographic split |
 
 For full column definitions, see [`docs/data_dictionary.md`](docs/data_dictionary.md).
 
@@ -67,38 +66,32 @@ For full column definitions, see [`docs/data_dictionary.md`](docs/data_dictionar
 ## KPI Framework
 | KPI | Definition | Formula / Computation |
 |---|---|---|
-| _To be filled by team_ | _What business outcome this tracks_ | _Show the exact formula or notebook reference_ |
+| **Net Revenue** | Revenue after returns — the primary P&L metric | `Σ(LineRevenue where not IsReturn) − Σ(|LineRevenue| where IsReturn)` |
+| **Return Rate** | Quality signal | `rows(IsReturn) / rows(all)` |
+| **Repeat Purchase Rate** | Health of the retention engine | `customers with ≥2 invoices / total registered customers` |
+| **Avg Order Value (AOV)** | Pricing + basket composition health | `Net Revenue per invoice` |
+| **RFM Score** | Customer segmentation for retention prioritization | Recency, Frequency, Monetary quintiled and concatenated |
+| **Top-20% Concentration** | Pareto — measures dependence risk | `rev from top 20% of customers / total rev` |
 
 ---
 
 ## Tableau Dashboard
 | Item | Details |
 |---|---|
-| **Dashboard URL** | _Paste Tableau Public link here_ |
-| **Executive View** | _Describe the high-level KPI summary view_ |
-| **Operational View** | _Describe the detailed drill-down view_ |
-| **Main Filters** | _List the interactive filters used_ |
+| **Dashboard URL** | _[To be published to Tableau Public]_ |
+| **Executive View** | **Revenue Overview** — Net revenue by month, country, top-20% concentration |
+| **Operational View** | **Customer Segments** — RFM segments; **Product Performance**; **Retention Health** |
+| **Main Filters** | Country, Date range, RFM segment, Registered vs Guest checkout |
 
 ---
 
 ## Key Insights
-1. _Insight 1_
-2. _Insight 2_
-3. _Insight 3_
-4. _Insight 4_
-5. _Insight 5_
-6. _Insight 6_
-7. _Insight 7_
-8. _Insight 8_
+_Pending analysis completion. To be updated post-EDA._
 
 ---
 
 ## Recommendations
-| # | Insight | Recommendation | Expected Impact |
-|---|---|---|---|
-| 1 | _Which insight does this address?_ | _What should the stakeholder do?_ | _What measurable impact do you expect?_ |
-| 2 | _Which insight does this address?_ | _What should the stakeholder do?_ | _What measurable impact do you expect?_ |
-| 3 | _Which insight does this address?_ | _What should the stakeholder do?_ | _What measurable impact do you expect?_ |
+_Pending analysis completion. To be updated post-EDA._
 
 ---
 
