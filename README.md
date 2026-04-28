@@ -15,13 +15,11 @@
 
 | Role | Name | GitHub Username |
 |---|---|---|
-| Project Lead | Shibaditya | `github-handle` |
-| Data Lead | Harshit Agrawal | `github-handle` |
-| ETL Lead | Harshit Agrawal | `github-handle` |
-| Analysis Lead | Jeet Shrivastav | `github-handle` |
-| Visualization Lead | Jay Patil | `github-handle` |
-| Strategy Lead | Arohi Jadhav | `github-handle` |
-| PPT and Quality Lead | Shibaditya | `github-handle` |
+| Team Lead & Data Extraction | Harshit Aggarwal | `github-handle` |
+| Statistical Analysis & ETL Engineer | Shibaditya Deb | `github-handle` |
+| Tableau & Visualization | Arohi Jadhav | `github-handle` |
+| Documentation & Reports | Jeet Srivastav | `github-handle` |
+| EDA & Final Load | Jay Patil | `github-handle` |
 
 ---
 
@@ -160,13 +158,16 @@ The project follows a structured 7-step workflow:
 ---
 
 ## Contribution Matrix
-| Team Member | Dataset and Sourcing | ETL and Cleaning | EDA and Analysis | Statistical Analysis | Tableau Dashboard | Report Writing | PPT and Viva |
-|---|---|---|---|---|---|---|---|
-| Harshit Agrawal | Owner | Owner | Support | Support | Support | Support | Support |
-| Jeet Shrivastav | Support | Support | Owner | Owner | Support | Support | Support |
-| Arohi Jadhav | Support | Support | Support | Support | Owner | Support | Support |
-| Jay Patil | Support | Support | Support | Support | Owner | Support | Support |
-| Shibaditya | Support | Support | Support | Support | Support | Owner | Owner |
+
+> Each and every team member was extremely helpful throughout this project. We believe our team worked collaboratively and with full dedication — it would not be possible for us to score or judge any individual member, as every contribution was equally valuable to the success of this project.
+
+| Member | Role | Key Deliverables | GitHub commits | PRs opened | PRs reviewed |
+|---|---|---|---|---|---|
+| **Harshit Aggarwal** | Team Lead & Data Extraction | `01_extraction.ipynb`, raw data commit, repo setup, `.gitignore`, `requirements.txt` | — | — | — |
+| **Shibaditya Deb** | Statistical Analysis & ETL Engineer | `02_cleaning.ipynb`, `04_statistical_analysis.ipynb`, `scripts/etl_pipeline.py`, `cleaned_dataset.csv` | — | — | — |
+| **Arohi Jadhav** | Tableau & Visualization | Tableau workbook, `tableau/screenshots/`, `tableau/dashboard_links.md`, Tableau dashboard | — | — | — |
+| **Jeet Srivastav** | Documentation & Reports | `reports/project_report.pdf`, `reports/presentation.pdf` | — | — | — |
+| **Jay Patil** | EDA & Final Load | `03_eda.ipynb`, KPI-ready flat file | — | — | — |
 
 ---
 
