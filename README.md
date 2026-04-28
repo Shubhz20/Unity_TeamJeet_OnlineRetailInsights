@@ -18,9 +18,25 @@ Retail / E-commerce.
 
 | | Source | Rows | Columns | Link |
 |---|---|---|---|---|
-| **Primary** | Online Retail II (UCI ML Repository) | ~1,067,000 | 8 | https://archive.ics.uci.edu/dataset/502/online+retail+ii |
-| **Backup 1** | Brazilian E-Commerce by Olist (Kaggle) | ~100,000 orders across 9 raw tables | 50+ (joined) | https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce |
-| **Backup 2** | Retailrocket recommender system dataset (Kaggle) | ~2.7M events | 8 (raw) | https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset |
+| **Primary** | Retail Sales Dataset (Kaggle) | 1,000 | 9 | https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset |
+
+**Creator:** Mohammad Talib &nbsp;|&nbsp; **License:** CC0 Public Domain &nbsp;|&nbsp; **Last updated:** August 22, 2023
+
+A synthetic dataset simulating a dynamic retail environment, designed for EDA practice. It captures essential attributes of retail transactions and customer demographics.
+
+### Columns
+
+| Column | Description |
+|---|---|
+| Transaction ID | Unique identifier for each transaction |
+| Date | Date the transaction occurred |
+| Customer ID | Unique identifier for each customer |
+| Gender | Customer gender |
+| Age | Customer age |
+| Product Category | Category of the purchased product |
+| Quantity | Number of items purchased |
+| Price per Unit | Unit price of the product |
+| Total Amount | Total transaction value (Quantity × Price per Unit) |
 
 Column-level definitions: see [`docs/data_dictionary.md`](docs/data_dictionary.md).
 
