@@ -13,14 +13,13 @@
 | **Institute** | Newton School of Technology |
 | **Submission Date** | _To be filled by team_ |
 
-| Role | Name | GitHub Username |
+| Role | Name 
 |---|---|---|
-| Team Lead & Data Extraction | Harshit Aggarwal | `github-handle` |
-| Statistical Analysis & ETL Engineer | Shibaditya Deb | `github-handle` |
-| Tableau & Visualization | Arohi Jadhav | `github-handle` |
-| Documentation & Reports | Jeet Srivastav | `github-handle` |
-| EDA & Final Load | Jay Patil | `github-handle` |
-
+| Team Lead & Data Extraction | Harshit Aggarwal 
+| Statistical Analysis & ETL Engineer | Shibaditya Deb 
+| Tableau & Visualization | Arohi Jadhav 
+| Documentation & Reports | Jeet Srivastav 
+| EDA & Final Load | Jay Patil 
 ---
 
 ## Business Problem
@@ -154,21 +153,6 @@ The project follows a structured 7-step workflow:
 | SQL | Initial data extraction only, if documented |
 
 **Python libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `statsmodels`
-
----
-
-## Contribution Matrix
-
-> Each and every team member was extremely helpful throughout this project. We believe our team worked collaboratively and with full dedication — it would not be possible for us to score or judge any individual member, as every contribution was equally valuable to the success of this project.
-
-| Member | Role | Key Deliverables | GitHub commits | PRs opened | PRs reviewed |
-|---|---|---|---|---|---|
-| **Harshit Aggarwal** | Team Lead & Data Extraction | `01_extraction.ipynb`, raw data commit, repo setup, `.gitignore`, `requirements.txt` | — | — | — |
-| **Shibaditya Deb** | Statistical Analysis & ETL Engineer | `02_cleaning.ipynb`, `04_statistical_analysis.ipynb`, `scripts/etl_pipeline.py`, `cleaned_dataset.csv` | — | — | — |
-| **Arohi Jadhav** | Tableau & Visualization | Tableau workbook, `tableau/screenshots/`, `tableau/dashboard_links.md`, Tableau dashboard | — | — | — |
-| **Jeet Srivastav** | Documentation & Reports | `reports/project_report.pdf`, `reports/presentation.pdf` | — | — | — |
-| **Jay Patil** | EDA & Final Load | `03_eda.ipynb`, KPI-ready flat file | — | — | — |
-
 ---
 
 *Newton School of Technology - Data Visualization & Analytics | Capstone 2*
