@@ -5,9 +5,9 @@
 ## Primary Dashboard
 
 - **Title:** Online Retail II — Revenue, Segments & Retention
-- **Public URL:** *[paste after publishing to Tableau Public]*
-- **Published by:** *[Tableau Public username]*
-- **Last updated:** *[YYYY-MM-DD]*
+- **Public URL:** https://public.tableau.com/app/profile/harshit.agrawal3738/viz/capstone_dva2final/Dashboard1?publish=yes
+- **Published by:** Harshit Aggarwal
+- **Last updated:** 2026-04-29
 
 ## Structure
 
